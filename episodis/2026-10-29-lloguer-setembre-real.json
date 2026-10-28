@@ -1,0 +1,146 @@
+{
+  "id": "2026-10-29-lloguer-setembre-real",
+  "tema": "Preu del lloguer a Espanya, setembre 2026 (idealista)",
+  "duration": 20,
+  "source": "Font: idealista · informe de preus, setembre 2026",
+  "ink": [
+    30,
+    38,
+    64
+  ],
+  "accent": [
+    214,
+    36,
+    44
+  ],
+  "muted": [
+    96,
+    104,
+    124
+  ],
+  "scenes": [
+    {
+      "t0": 0.0,
+      "t1": 3.4,
+      "type": "title",
+      "kicker": "Mercat del lloguer · setembre 2026",
+      "text": "El lloguer comença a frenar"
+    },
+    {
+      "t0": 3.4,
+      "t1": 7.6,
+      "type": "stat",
+      "label": "Preu mitjà del lloguer a Espanya",
+      "value": 15.1,
+      "decimals": 1,
+      "suffix": " €/m²",
+      "sub": "al mes",
+      "moods": "idle"
+    },
+    {
+      "t0": 7.6,
+      "t1": 11.2,
+      "type": "stat",
+      "label": "Variació en els últims 12 mesos",
+      "value": 5.6,
+      "decimals": 1,
+      "prefix": "+",
+      "suffix": "%",
+      "arrow": "up",
+      "moods": "worried"
+    },
+    {
+      "t0": 8.8,
+      "t1": 11.0,
+      "type": "bubble",
+      "who": "pep",
+      "text": "Els salaris no pugen al mateix ritme"
+    },
+    {
+      "t0": 11.2,
+      "t1": 14.8,
+      "type": "stat",
+      "label": "Variació en l'últim trimestre",
+      "value": 0.4,
+      "decimals": 1,
+      "prefix": "−",
+      "suffix": "%",
+      "arrow": "down",
+      "sub": "Primera baixada des del 2021",
+      "moods": "idle"
+    },
+    {
+      "t0": 14.8,
+      "t1": 17.6,
+      "type": "stat",
+      "label": "Catalunya",
+      "value": 15.9,
+      "decimals": 1,
+      "suffix": " €/m²",
+      "sub": "+2,2% anual · Barcelona: −0,8%",
+      "moods": "idle"
+    },
+    {
+      "t0": 15.7,
+      "t1": 17.5,
+      "type": "bubble",
+      "who": "robot",
+      "text": "Frena, però no baixa"
+    },
+    {
+      "t0": 17.6,
+      "t1": 20.0,
+      "type": "outro",
+      "text": "Dades del mercat immobiliari, cada 3 dies",
+      "handle": "@pepnivell",
+      "moods": "idle"
+    }
+  ],
+  "actions": [
+    {
+      "t0": 0.6,
+      "t1": 3.0,
+      "who": "robot",
+      "act": "tilt",
+      "deg": -2
+    },
+    {
+      "t0": 3.5,
+      "t1": 7.4,
+      "who": "robot",
+      "act": "look_up",
+      "deg": -2.5
+    },
+    {
+      "t0": 7.8,
+      "t1": 11.0,
+      "who": "robot",
+      "act": "eyes",
+      "expr": "worried"
+    },
+    {
+      "t0": 8.7,
+      "t1": 11.1,
+      "who": "robot",
+      "act": "look_at",
+      "deg": 4
+    },
+    {
+      "t0": 15.7,
+      "t1": 17.5,
+      "who": "robot",
+      "act": "talk"
+    },
+    {
+      "t0": 17.7,
+      "t1": 20.0,
+      "who": "robot",
+      "act": "look_at",
+      "deg": 4
+    }
+  ],
+  "tone": "serious",
+  "static_heads": [
+    "pep"
+  ]
+}
