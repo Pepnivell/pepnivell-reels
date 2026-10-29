@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-29-lloguer-setembre",
+  "source": "Font: idealista · informe de preus, setembre 2026",
+  "kicker": "Mercat del lloguer · setembre 2026",
+  "title": "El lloguer comença a frenar",
+  "stats": [
+    {
+      "label": "Preu mitjà del lloguer a Espanya",
+      "value": 15.1,
+      "decimals": 1,
+      "suffix": " €/m²",
+      "sub": "+5,6% en un any",
+      "trend": "up",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Variació en l'últim trimestre",
+      "value": 0.4,
+      "decimals": 1,
+      "prefix": "−",
+      "suffix": "%",
+      "sub": "Primera baixada des del 2021",
+      "trend": "down",
+      "sentiment": "neutral"
+    }
+  ],
+  "pep_line": "Els salaris no pugen al mateix ritme",
+  "robot_line": "Primer respir en cinc anys",
+  "takeaway": "Els preus s'estabilitzen, però continuen prop de màxims",
+  "outro": "Dades del mercat immobiliari, cada 3 dies",
+  "logo": "",
+  "show_source": true
+}
