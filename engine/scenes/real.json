@@ -1,0 +1,54 @@
+{
+ "kind": "cutout",
+ "image": "../full.png",
+ "alpha_source": true,
+ "scale": 0.95,
+ "group_x": [
+  30,
+  712
+ ],
+ "feet_y": 983,
+ "split": [
+  [
+   384,
+   0
+  ],
+  [
+   384,
+   1011
+  ]
+ ],
+ "robot": {
+  "head": {
+   "c": [
+    258,
+    125
+   ],
+   "r": 78,
+   "pivot": [
+    258,
+    205
+   ]
+  },
+  "eyes": {
+   "style": "bar",
+   "c": [
+    257,
+    131
+   ],
+   "w": 30,
+   "th": 7,
+   "angle": 4
+  },
+  "bubble": [
+   40,
+   20
+  ]
+ },
+ "pep": {
+  "bubble": [
+   720,
+   20
+  ]
+ }
+}

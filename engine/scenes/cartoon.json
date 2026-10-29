@@ -1,5 +1,5 @@
 {
- "image": "hosts2.png",
+ "image": "../hosts2.png",
  "scale": 0.78,
  "group_x": [
   170,
@@ -113,7 +113,8 @@
     590,
     175
    ],
-   "w": 24
+   "w": 24,
+   "style": "arc"
   },
   "bubble": [
    205,
@@ -148,5 +149,6 @@
    1147
   ]
  ],
- "floor_default": 1050
+ "floor_default": 1050,
+ "kind": "cutout"
 }

@@ -1,0 +1,32 @@
+{
+ "kind": "photo",
+ "image": "../botiga.jpg",
+ "box_w": 1000,
+ "box_cy": 1010,
+ "focus": [
+  200,
+  200
+ ],
+ "robot": {
+  "eyes": {
+   "style": "bar",
+   "c": [
+    163,
+    176
+   ],
+   "w": 23,
+   "th": 5,
+   "angle": 8
+  },
+  "bubble": [
+   95,
+   60
+  ]
+ },
+ "pep": {
+  "bubble": [
+   370,
+   170
+  ]
+ }
+}
