@@ -1,0 +1,34 @@
+{
+  "id": "2026-11-01-compra-barcelona",
+  "source": "Font: idealista · informe de preus de venda, 3r trimestre 2026",
+  "kicker": "Habitatge usat en venda · 3T 2026",
+  "title": "Comprar a Barcelona, en màxims",
+  "stats": [
+    {
+      "label": "Preu mitjà de venda a Barcelona",
+      "value": 5462,
+      "decimals": 0,
+      "suffix": " €/m²",
+      "sub": "+5,8% en un any · màxim històric",
+      "trend": "up",
+      "sentiment": "negative"
+    },
+    {
+      "label": "Pujada anual a Catalunya",
+      "value": 12.2,
+      "decimals": 1,
+      "prefix": "+",
+      "suffix": "%",
+      "sub": "Per sobre de la mitjana espanyola (+11,8%)",
+      "trend": "up",
+      "sentiment": "negative"
+    }
+  ],
+  "pep_line": "Comprar és cada cop més car",
+  "robot_line": "Nou rècord a la ciutat",
+  "takeaway": "Catalunya puja més que la mitjana d'Espanya",
+  "outro": "Dades del mercat immobiliari, cada 3 dies",
+  "logo": "",
+  "show_source": true,
+  "scene": "botiga"
+}
