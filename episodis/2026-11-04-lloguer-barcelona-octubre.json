@@ -1,0 +1,34 @@
+{
+  "id": "2026-11-04-lloguer-barcelona-octubre",
+  "source": "Font: idealista · informe de preus de lloguer, octubre 2026",
+  "kicker": "Mercat del lloguer · octubre 2026",
+  "title": "El lloguer a Barcelona s'estanca",
+  "stats": [
+    {
+      "label": "Lloguer mitjà a Barcelona ciutat",
+      "value": 20.5,
+      "decimals": 1,
+      "suffix": " €/m²",
+      "sub": "Només +0,3% en un any",
+      "trend": "up",
+      "sentiment": "neutral"
+    },
+    {
+      "label": "Pujada anual a Catalunya",
+      "value": 2.9,
+      "decimals": 1,
+      "prefix": "+",
+      "suffix": "%",
+      "sub": "Per sota de la mitjana espanyola (+5,6%)",
+      "trend": "up",
+      "sentiment": "neutral"
+    }
+  ],
+  "pep_line": "Estancat, però en preus molt alts",
+  "robot_line": "Gairebé pla en un any",
+  "takeaway": "Barcelona frena, però és la 2a capital més cara",
+  "outro": "Dades del mercat immobiliari, cada 3 dies",
+  "logo": "",
+  "show_source": true,
+  "scene": "estand"
+}
