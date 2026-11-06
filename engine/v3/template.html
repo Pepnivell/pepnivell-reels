@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:P;font-weight:900;src:url(file:///usr/share/fonts/opentype/inter/InterDisplay-Black.otf)}
+@font-face{font-family:P;font-weight:800;src:url(file:///usr/share/fonts/opentype/inter/InterDisplay-ExtraBold.otf)}
+@font-face{font-family:P;font-weight:700;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf)}
+@font-face{font-family:P;font-weight:500;src:url(file:///usr/share/fonts/truetype/google-fonts/Poppins-Medium.ttf)}
+:root{--red:#E3001B;--navy:#0B1530;--yel:#FFD23F;--ink:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font-family:P,sans-serif;color:#fff}
+.abs{position:absolute}
+#stage{position:absolute;inset:0;overflow:hidden;transform-origin:50% 45%}
+.scene{position:absolute;inset:0;opacity:0}
+.bgimg{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:blur(18px) brightness(.38) saturate(1.2)}
+.grad{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 30%,rgba(227,0,27,.25),transparent 60%),linear-gradient(180deg,rgba(11,21,48,.2),rgba(11,21,48,.85))}
+.kicker{left:0;right:0;text-align:center;font-weight:700;font-size:38px;letter-spacing:6px;text-transform:uppercase;color:var(--yel)}
+.w{display:inline-block;margin:.04em 0;transform-origin:50% 80%}
+.hl{background:var(--red);padding:0 .18em;border-radius:14px;box-decoration-break:clone}
+.hly{color:var(--navy);background:var(--yel);padding:0 .18em;border-radius:14px}
+.big{left:60px;right:60px;text-align:center;font-weight:900;line-height:1.08;text-shadow:0 8px 30px rgba(0,0,0,.45)}
+.label{left:70px;right:70px;text-align:center;font-weight:700;font-size:54px;line-height:1.2}
+.num{left:0;right:0;text-align:center;font-weight:900;font-size:270px;letter-spacing:-8px;line-height:1}
+.num small{font-size:110px;letter-spacing:-2px}
+.chip{left:50%;transform:translateX(-50%);white-space:nowrap;font-weight:800;font-size:50px;padding:18px 36px;border-radius:999px;background:#fff;color:var(--navy)}
+.bars{left:110px;right:110px;height:760px;display:flex;align-items:flex-end;justify-content:space-around}
+.bar{width:300px;position:relative;border-radius:26px 26px 8px 8px}
+.bar .v{position:absolute;left:0;right:0;top:-130px;text-align:center;font-weight:900;font-size:100px}
+.bar .n{position:absolute;left:-40px;right:-40px;bottom:-90px;text-align:center;font-weight:700;font-size:46px}
+.cap{left:50px;right:50px;text-align:center;font-weight:900;font-size:92px;line-height:1.12;-webkit-text-stroke:3px rgba(0,0,0,.35);text-shadow:0 6px 0 rgba(0,0,0,.35)}
+#prog{left:40px;right:40px;top:40px;height:10px;display:flex;gap:10px}
+#prog div{flex:1;background:rgba(255,255,255,.25);border-radius:6px;overflow:hidden}
+#prog div i{display:block;height:100%;width:0;background:#fff}
+#src{left:0;right:0;bottom:70px;text-shadow:0 2px 8px rgba(0,0,0,.6);text-align:center;font-weight:500;font-size:30px;color:rgba(255,255,255,.75)}
+#handle{left:0;right:0;top:78px;text-align:center;font-weight:700;font-size:34px;color:rgba(255,255,255,.9)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+</style></head><body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div class="scene" id="s1"><div class="bgimg" style="background-image:url(BGIMG)"></div><div class="grad"></div>
+    <div class="abs kicker" style="top:520px" id="k1"></div>
+    <div class="abs big" style="top:640px;font-size:132px" id="hook"></div>
+  </div>
+  <!-- S2 stat 1 -->
+  <div class="scene" id="s2"><div class="bgimg" style="background-image:url(BGIMG)"></div><div class="grad"></div>
+    <div class="abs label" style="top:560px" id="l1"></div>
+    <div class="abs num" style="top:760px" id="n1"></div>
+    <div class="abs chip" style="top:1080px" id="c1"></div>
+  </div>
+  <!-- S3 comparison -->
+  <div class="scene" id="s3" style="background:linear-gradient(180deg,#0B1530,#14224a)">
+    <div class="abs label" style="top:330px" id="l2"></div>
+    <div class="abs bars" style="top:620px" id="bars"></div>
+  </div>
+  <!-- S4 Pep -->
+  <div class="scene" id="s4" style="background:radial-gradient(90% 60% at 50% 70%,#E3001B,#7a0010 55%,#2a0610)">
+    <img class="abs" id="pep" src="PEPIMG" style="height:1250px;left:50%;bottom:0;transform-origin:50% 100%">
+    <div class="abs cap" style="top:330px" id="cap"></div>
+  </div>
+  <!-- S5 takeaway + CTA -->
+  <div class="scene" id="s5" style="background:#fff;color:var(--navy)">
+    <div class="abs big" style="top:520px;font-size:104px;color:var(--navy);text-shadow:none" id="take"></div>
+    <div class="abs chip" style="top:1240px;background:var(--red);color:#fff" id="cta"></div>
+    <div class="abs kicker" style="top:1380px;color:var(--navy);font-size:34px;letter-spacing:3px" id="outro"></div>
+  </div>
+</div>
+<div class="abs" id="prog"></div>
+<div class="abs" id="handle">@pepnivell</div>
+<div class="abs" id="src"></div>
+<div id="flash"></div>
+<script>
+const EP = EPJSON;
+const $ = id => document.getElementById(id);
+const cl = (x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo = t=>1-Math.pow(1-cl(t),3);
+const eb = t=>{t=cl(t);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(t-1,3)+c1*Math.pow(t-1,2)};
+const fmt=(v,d)=>v.toFixed(d).replace('.',',');
+// timeline
+const T = EP.timing; // [start,end] per scene
+const S = ['s1','s2','s3','s4','s5'];
+// build word spans
+function words(el, text, marks){
+  // paraules consecutives amb el mateix marcatge van juntes en un sol bloc
+  const ws = text.split(' '), groups = [];
+  ws.forEach((w,i)=>{const m=(marks&&marks[i])||'';
+    const g=groups[groups.length-1];
+    if(m && g && g.m===m) g.t.push(w); else groups.push({m, t:[w]});});
+  el.innerHTML = groups.map(g=>`<span class="w ${g.m}">${g.t.join(' ')}</span>`).join(' ');
+  return [...el.querySelectorAll('.w')];
+}
+$('k1').textContent = EP.kicker;
+const hookW = words($('hook'), EP.hook.text, EP.hook.marks);
+$('l1').textContent = EP.stat1.label;
+$('c1').textContent = EP.stat1.sub;
+$('l2').textContent = EP.compare.label;
+const bars = EP.compare.items.map((it,i)=>{
+  const b=document.createElement('div'); b.className='bar';
+  b.style.background = it.hl ? 'var(--red)' : 'rgba(255,255,255,.28)';
+  b.innerHTML=`<div class="v"></div><div class="n">${it.name}</div>`; $('bars').appendChild(b); return b;});
+const capW = words($('cap'), EP.pep.text, EP.pep.marks);
+const takeW = words($('take'), EP.take.text, EP.take.marks);
+$('cta').textContent = EP.cta;
+$('outro').textContent = EP.outro;
+$('src').textContent = EP.source;
+S.forEach(()=>{const d=document.createElement('div');d.innerHTML='<i></i>';$('prog').appendChild(d)});
+const maxV = Math.max(...EP.compare.items.map(i=>i.value));
+
+function popWords(ws, t, t0, step){
+  ws.forEach((w,i)=>{const k=(t-t0-i*step)/0.22;
+    w.style.opacity = cl(k*3); w.style.transform=`scale(${0.4+0.6*eb(k)}) translateY(${(1-eo(k))*30}px)`;});
+}
+window.render = function(t){
+  // scenes visibility (hard cuts + quick punch)
+  let cur=0; S.forEach((id,i)=>{const [a,b]=T[i]; const on=t>=a&&t<b; $(id).style.opacity=on?1:0; if(on)cur=i;});
+  const [a,b]=T[cur], lt=t-a;
+  // global punch-in at each cut, plus slow drift
+  const punch = 1 + 0.06*Math.exp(-lt*7);
+  const drift = 1 + 0.025*(lt/(b-a));
+  const shake = Math.exp(-lt*9)*8;
+  $('stage').style.transform=`scale(${punch*drift}) translate(${Math.sin(lt*60)*shake}px,${Math.cos(lt*53)*shake}px)`;
+  $('flash').style.opacity = cur>0 ? 0.55*Math.exp(-lt*14) : 0;
+  // progress
+  [...$('prog').children].forEach((d,i)=>{const [x,y]=T[i]; d.firstChild.style.width=(cl((t-x)/(y-x))*100)+'%'});
+  // light elements on white scene
+  const dark = cur===4; $('handle').style.color = dark?'#0B1530':'rgba(255,255,255,.9)';
+  $('src').style.textShadow = dark?'none':''; $('src').style.color = dark?'rgba(11,21,48,.6)':'rgba(255,255,255,.75)';
+  [...$('prog').children].forEach(d=>{d.style.background=dark?'rgba(11,21,48,.15)':'rgba(255,255,255,.25)';d.firstChild.style.background=dark?'#0B1530':'#fff'});
+
+  // S1 hook
+  if(cur===0){ $('k1').style.opacity=eo(lt/0.3); popWords(hookW,t,a+0.15,0.17); }
+  // S2 stat 1 counter
+  if(cur===1){ $('l1').style.opacity=eo(lt/0.3); $('l1').style.transform=`translateY(${(1-eo(lt/0.35))*40}px)`;
+    const k=eo((lt-0.2)/1.4); const v=EP.stat1.value*k;
+    $('n1').innerHTML=`${EP.stat1.prefix||''}${fmt(v,EP.stat1.decimals)}<small>${EP.stat1.suffix}</small>`;
+    const s=eb((lt-0.2)/0.35); $('n1').style.transform=`scale(${0.5+0.5*s})`; $('n1').style.opacity=cl((lt-0.2)*6);
+    const c=eb((lt-1.9)/0.35); $('c1').style.opacity=cl((lt-1.9)*6); $('c1').style.transform=`translateX(-50%) scale(${0.6+0.4*c}) rotate(${(1-c)*-6}deg)`; }
+  // S3 bars
+  if(cur===2){ $('l2').style.opacity=eo(lt/0.3);
+    bars.forEach((bEl,i)=>{const it=EP.compare.items[i]; const k=eo((lt-0.3-i*0.6)/1.0);
+      bEl.style.height=(k*it.value/maxV*620+8)+'px';
+      const v=bEl.querySelector('.v'); v.textContent=(it.prefix||'')+fmt(it.value*k,it.decimals)+(it.suffix||''); v.style.opacity=cl(k*4);});}
+  // S4 Pep
+  if(cur===3){ const k=eb(lt/0.5); $('pep').style.transform=`translateX(-50%) translateY(${(1-eo(lt/0.45))*500}px) scale(${0.92+0.08*k+0.02*lt})`;
+    popWords(capW,t,a+0.35,0.2); }
+  // S5 takeaway + CTA
+  if(cur===4){ popWords(takeW,t,a+0.1,0.13);
+    const c=eb((lt-1.4)/0.35); $('cta').style.opacity=cl((lt-1.4)*6); $('cta').style.transform=`translateX(-50%) scale(${0.6+0.4*c})`;
+    $('outro').style.opacity=eo((lt-1.8)/0.4); }
+};
+render(0);
+</script></body></html>
