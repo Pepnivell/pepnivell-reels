@@ -53,7 +53,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font
   </div>
   <!-- S4 Pep -->
   <div class="scene" id="s4" style="background:radial-gradient(90% 60% at 50% 70%,#E3001B,#7a0010 55%,#2a0610)">
-    <img class="abs" id="pep" src="PEPIMG" style="height:1250px;left:50%;bottom:0;transform-origin:50% 100%">
+    <img class="abs" id="pep" src="PEPIMG" style="height:1340px;right:-30px;bottom:0;transform-origin:70% 100%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))">
     <div class="abs cap" style="top:330px" id="cap"></div>
   </div>
   <!-- S5 takeaway + CTA -->
@@ -139,7 +139,7 @@ window.render = function(t){
       bEl.style.height=(k*it.value/maxV*620+8)+'px';
       const v=bEl.querySelector('.v'); v.textContent=(it.prefix||'')+fmt(it.value*k,it.decimals)+(it.suffix||''); v.style.opacity=cl(k*4);});}
   // S4 Pep
-  if(cur===3){ const k=eb(lt/0.5); $('pep').style.transform=`translateX(-50%) translateY(${(1-eo(lt/0.45))*500}px) scale(${0.92+0.08*k+0.02*lt})`;
+  if(cur===3){ const k=eb(lt/0.5); $('pep').style.transform=`translateY(${(1-eo(lt/0.45))*500}px) scale(${0.92+0.08*k+0.02*lt})`;
     popWords(capW,t,a+0.35,0.2); }
   // S5 takeaway + CTA
   if(cur===4){ popWords(takeW,t,a+0.1,0.13);

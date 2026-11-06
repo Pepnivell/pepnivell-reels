@@ -1,0 +1,75 @@
+{
+  "id": "2026-11-04-exemple-v3",
+  "scene": "estand",
+  "source": "Font: idealista · informe de preus de lloguer, octubre 2026",
+  "kicker": "Mercat del lloguer · octubre 2026",
+  "title": "El lloguer a Barcelona s'estanca",
+  "outro": "Dades del mercat immobiliari, cada 3 dies",
+  "engine": "v3",
+  "v3": {
+    "hook": {
+      "text": "El lloguer a Barcelona s'ha aturat?",
+      "marks": [
+        null,
+        null,
+        null,
+        null,
+        "hly",
+        "hly"
+      ]
+    },
+    "stat1": {
+      "label": "Lloguer mitjà a Barcelona ciutat",
+      "value": 20.5,
+      "decimals": 1,
+      "suffix": " €/m²",
+      "sub": "Només +0,3% en un any"
+    },
+    "compare": {
+      "label": "Pujada anual del lloguer",
+      "items": [
+        {
+          "name": "Catalunya",
+          "value": 2.9,
+          "decimals": 1,
+          "prefix": "+",
+          "suffix": "%",
+          "hl": true
+        },
+        {
+          "name": "Espanya",
+          "value": 5.6,
+          "decimals": 1,
+          "prefix": "+",
+          "suffix": "%"
+        }
+      ]
+    },
+    "pep": {
+      "text": "Estancat, però en preus molt alts",
+      "marks": [
+        null,
+        null,
+        null,
+        null,
+        "hly",
+        "hly"
+      ]
+    },
+    "take": {
+      "text": "Barcelona frena, però és la 2a capital més cara",
+      "marks": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "hl",
+        "hl"
+      ]
+    },
+    "cta": "Segueix @pepnivell"
+  }
+}
