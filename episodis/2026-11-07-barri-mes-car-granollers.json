@@ -1,0 +1,73 @@
+{
+  "id": "2026-11-07-barri-mes-car-granollers",
+  "engine": "v3",
+  "tipus": "curiositat",
+  "scene": "botiga",
+  "source": "Font: idealista · informe de preus de venda, setembre 2026",
+  "kicker": "Granollers · setembre 2026",
+  "title": "El barri més car de Granollers",
+  "outro": "Dades del mercat immobiliari, cada 3 dies",
+  "v3": {
+    "hook": {
+      "text": "Quin és el barri més car de Granollers?",
+      "marks": [
+        null,
+        null,
+        null,
+        null,
+        "hly",
+        "hly",
+        null,
+        null
+      ]
+    },
+    "stat1": {
+      "label": "Font Verda, Granollers",
+      "value": 3089,
+      "decimals": 0,
+      "suffix": " €/m²",
+      "sub": "+22,2% en un any"
+    },
+    "compare": {
+      "label": "Preu de venda per barri (€/m²)",
+      "items": [
+        {
+          "name": "Font Verda",
+          "value": 3089,
+          "decimals": 0,
+          "suffix": "",
+          "hl": true
+        },
+        {
+          "name": "Hostal-Lled.",
+          "value": 2260,
+          "decimals": 0,
+          "suffix": ""
+        }
+      ]
+    },
+    "pep": {
+      "text": "Mateixa ciutat, preus molt diferents",
+      "marks": [
+        null,
+        null,
+        null,
+        "hly",
+        "hly"
+      ]
+    },
+    "take": {
+      "text": "Font Verda marca el seu màxim històric",
+      "marks": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "hl",
+        "hl"
+      ]
+    },
+    "cta": "Segueix @pepnivell"
+  }
+}
